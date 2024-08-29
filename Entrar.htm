@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" 
+  href="style.css" />
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,22 +31,25 @@
   <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true"
     alt="Istituto federal de São Paulo">
 
-  <h1>Entrar</h1>
-
-  <form action="/login" method="post" class="login-form">
-    <div class="input-group">
-      <label for="usuario">Usuário:</label>
-      <input type="text" id="usuario" name="usuario" required class="input-field usuario-field">
-    </div>
-
-    <div class="input-group">
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required class="input-field senha-field">
-    </div>
-
-    <input type="submit" value="Enviar" class="submit-button">
-    <a href="/esqueci_senha" class="forgot-password">Esqueci a senha</a>
-  </form>
+  <div class="login-form text-center">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/ifsp.png?raw=true" alt="Instituto Federal de São Paulo" class="mb-4">
+      <h2>Faça login</h2>
+      <form action="/login" method="post">
+          <div class="form-group">
+              <input type="email" class="form-control" placeholder="Seu email" required>
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" placeholder="Senha" required>
+          </div>
+          <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="lembrar">
+              <label class="form-check-label" for="lembrar">Lembrar de mim</label>
+          </div>
+          <a href="/esqueci_senha" class="d-block mb-3">Esqueci a senha</a>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <footer class="mt-4">© 2020</footer>
+  </div>
     
 
     <a href="https://www.facebook.com/ifsppirituba">
@@ -51,7 +57,8 @@
         height="30px"  title="IFSP Facebook"/>
     </a>
 
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <footer>
 
 

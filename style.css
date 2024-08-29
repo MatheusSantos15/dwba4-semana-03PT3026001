@@ -5,7 +5,7 @@ html {
   width: 100%;
 }
 
-body {}
+body {background-color: #f8f9fa;}
 
 .conteiner {
   display: flex;
@@ -334,4 +334,22 @@ input[type="reset"] {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.login-form {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form img {
+  width: 80px;
+  /* Tamanho da logo */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
 }
